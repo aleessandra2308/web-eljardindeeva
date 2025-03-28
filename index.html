@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Florería Bella Flor</title>
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.css" />
+  <style>
+    body { font-family: sans-serif; margin: 0; padding: 0; }
+    header { background: #f8f0f5; padding: 2rem; text-align: center; }
+    header h1 { margin: 0; color: #c94f7c; }
+    .hero { background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat; height: 300px; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem; }
+    .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; padding: 2rem; }
+    .product { border: 1px solid #ddd; border-radius: 8px; padding: 1rem; text-align: center; }
+    .product img { max-width: 100%; border-radius: 4px; }
+    .product h2 { font-size: 1.2rem; color: #c94f7c; }
+    footer { background: #f8f0f5; padding: 1rem; text-align: center; font-size: 0.9rem; color: #777; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Florería Bella Flor</h1>
+  </header>
+  <div class="hero">
+    Flores frescas para cada ocasión
+  </div>
+  <main class="products">
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" alt="Ramo de Rosas">
+      <h2>Ramo de Rosas</h2>
+      <p>$25.00</p>
+      <button class="snipcart-add-item"
+        data-item-id="rosas"
+        data-item-name="Ramo de Rosas"
+        data-item-price="25.00"
+        data-item-url="/"
+        data-item-description="Hermoso ramo de rosas rojas frescas.">
+        Añadir al carrito
+      </button>
+    </div>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1524592134842-6a62f5f71b03?auto=format&fit=crop&w=800&q=80" alt="Arreglo Primaveral">
+      <h2>Arreglo Primaveral</h2>
+      <p>$30.00</p>
+      <button class="snipcart-add-item"
+        data-item-id="primaveral"
+        data-item-name="Arreglo Primaveral"
+        data-item-price="30.00"
+        data-item-url="/"
+        data-item-description="Colorido arreglo de flores variadas.">
+        Añadir al carrito
+      </button>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Florería Bella Flor - Todos los derechos reservados.
+  </footer>
+
+  <script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
+  <div hidden id="snipcart" data-api-key="TU_API_KEY_AQUI"></div>
+</body>
+</html>
